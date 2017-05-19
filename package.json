@@ -1,6 +1,6 @@
 {
-  "name": "@wnpm/antd",
-  "version": "2.10.1",
+  "name": "bach-antd",
+  "version": "1.0.0",
   "title": "Ant Design",
   "description": "An enterprise-class UI design language and React-based implementation",
   "homepage": "http://ant.design/",

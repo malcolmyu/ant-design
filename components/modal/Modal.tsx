@@ -138,25 +138,28 @@ export default class Modal extends React.Component<ModalProps, any> {
       cancelText = cancelText || this.context.antLocale.Modal.cancelText;
     }
 
-    const defaultFooter = [(
-      <Button
-        key="cancel"
-        size="large"
-        onClick={this.handleCancel}
-      >
-        {cancelText || '取消'}
-      </Button>
-    ), (
-      <Button
-        key="confirm"
-        type="primary"
-        size="large"
-        loading={confirmLoading}
-        onClick={this.handleOk}
-      >
-        {okText || '确定'}
-      </Button>
-    )];
+    const defaultFooter = [
+      (
+        <Button
+          key="confirm"
+          type="primary"
+          size="large"
+          loading={confirmLoading}
+          onClick={this.handleOk}
+        >
+          {okText || '确定'}
+        </Button>
+      ),
+      (
+        <Button
+          key="cancel"
+          size="large"
+          onClick={this.handleCancel}
+        >
+          {cancelText || '取消'}
+        </Button>
+      ),
+    ];
 
     return (
       <Dialog
